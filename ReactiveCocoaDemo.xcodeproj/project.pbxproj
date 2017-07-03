@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28AB39DF9ECB80EC7E618B93 /* Pods_ReactiveCocoaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 447CAA3D445889CB561B605D /* Pods_ReactiveCocoaDemo.framework */; };
 		B51CCB8C1F09E9D400F91F99 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CCB8B1F09E9D400F91F99 /* main.m */; };
 		B51CCB8F1F09E9D500F91F99 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CCB8E1F09E9D500F91F99 /* AppDelegate.m */; };
 		B51CCB921F09E9D500F91F99 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CCB911F09E9D500F91F99 /* ViewController.m */; };
@@ -15,6 +16,11 @@
 		B51CCB9A1F09E9D500F91F99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B51CCB981F09E9D500F91F99 /* LaunchScreen.storyboard */; };
 		B51CCBA51F09E9D500F91F99 /* ReactiveCocoaDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CCBA41F09E9D500F91F99 /* ReactiveCocoaDemoTests.m */; };
 		B51CCBB01F09E9D500F91F99 /* ReactiveCocoaDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CCBAF1F09E9D500F91F99 /* ReactiveCocoaDemoUITests.m */; };
+		B51CCBC61F09F2AF00F91F99 /* NetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CCBC51F09F2AF00F91F99 /* NetworkClient.m */; };
+		B51CCBCC1F09F2FA00F91F99 /* NSArray+mutableDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CCBC91F09F2FA00F91F99 /* NSArray+mutableDeepCopy.m */; };
+		B51CCBCD1F09F2FA00F91F99 /* NSDictionary+mutableDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CCBCB1F09F2FA00F91F99 /* NSDictionary+mutableDeepCopy.m */; };
+		B51CCBD01F09F41C00F91F99 /* RacTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CCBCF1F09F41C00F91F99 /* RacTestModel.m */; };
+		B51CCBD31F09F54700F91F99 /* RacHomeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B51CCBD21F09F54700F91F99 /* RacHomeTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		219AB9B0024FDF84B4CEF5A0 /* Pods-ReactiveCocoaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaDemo/Pods-ReactiveCocoaDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		447CAA3D445889CB561B605D /* Pods_ReactiveCocoaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveCocoaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		680AF6FDFD74234307E7F29C /* Pods-ReactiveCocoaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveCocoaDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactiveCocoaDemo/Pods-ReactiveCocoaDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B51CCB871F09E9D400F91F99 /* ReactiveCocoaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveCocoaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51CCB8B1F09E9D400F91F99 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B51CCB8D1F09E9D400F91F99 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +60,17 @@
 		B51CCBAB1F09E9D500F91F99 /* ReactiveCocoaDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveCocoaDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B51CCBAF1F09E9D500F91F99 /* ReactiveCocoaDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveCocoaDemoUITests.m; sourceTree = "<group>"; };
 		B51CCBB11F09E9D500F91F99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B51CCBBD1F09EF8F00F91F99 /* RacDemo_pch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RacDemo_pch.pch; sourceTree = "<group>"; };
+		B51CCBC41F09F2AF00F91F99 /* NetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClient.h; sourceTree = "<group>"; };
+		B51CCBC51F09F2AF00F91F99 /* NetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClient.m; sourceTree = "<group>"; };
+		B51CCBC81F09F2FA00F91F99 /* NSArray+mutableDeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+mutableDeepCopy.h"; sourceTree = "<group>"; };
+		B51CCBC91F09F2FA00F91F99 /* NSArray+mutableDeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+mutableDeepCopy.m"; sourceTree = "<group>"; };
+		B51CCBCA1F09F2FA00F91F99 /* NSDictionary+mutableDeepCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+mutableDeepCopy.h"; sourceTree = "<group>"; };
+		B51CCBCB1F09F2FA00F91F99 /* NSDictionary+mutableDeepCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+mutableDeepCopy.m"; sourceTree = "<group>"; };
+		B51CCBCE1F09F41C00F91F99 /* RacTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacTestModel.h; sourceTree = "<group>"; };
+		B51CCBCF1F09F41C00F91F99 /* RacTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RacTestModel.m; sourceTree = "<group>"; };
+		B51CCBD11F09F54700F91F99 /* RacHomeTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RacHomeTestViewController.h; sourceTree = "<group>"; };
+		B51CCBD21F09F54700F91F99 /* RacHomeTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RacHomeTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28AB39DF9ECB80EC7E618B93 /* Pods_ReactiveCocoaDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01CDE0BAF9CC9E27A0E4C314 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				447CAA3D445889CB561B605D /* Pods_ReactiveCocoaDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F4493C318BF9EBD3C53D6B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				219AB9B0024FDF84B4CEF5A0 /* Pods-ReactiveCocoaDemo.debug.xcconfig */,
+				680AF6FDFD74234307E7F29C /* Pods-ReactiveCocoaDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B51CCB7E1F09E9D400F91F99 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +123,8 @@
 				B51CCBA31F09E9D500F91F99 /* ReactiveCocoaDemoTests */,
 				B51CCBAE1F09E9D500F91F99 /* ReactiveCocoaDemoUITests */,
 				B51CCB881F09E9D400F91F99 /* Products */,
+				5F4493C318BF9EBD3C53D6B4 /* Pods */,
+				01CDE0BAF9CC9E27A0E4C314 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +143,8 @@
 			children = (
 				B51CCB8D1F09E9D400F91F99 /* AppDelegate.h */,
 				B51CCB8E1F09E9D500F91F99 /* AppDelegate.m */,
-				B51CCB901F09E9D500F91F99 /* ViewController.h */,
-				B51CCB911F09E9D500F91F99 /* ViewController.m */,
+				B51CCBC31F09F28B00F91F99 /* NetWorkClient */,
+				B51CCBBF1F09F21600F91F99 /* RacHomeTest */,
 				B51CCB931F09E9D500F91F99 /* Main.storyboard */,
 				B51CCB961F09E9D500F91F99 /* Assets.xcassets */,
 				B51CCB981F09E9D500F91F99 /* LaunchScreen.storyboard */,
@@ -117,7 +157,10 @@
 		B51CCB8A1F09E9D400F91F99 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B51CCB901F09E9D500F91F99 /* ViewController.h */,
+				B51CCB911F09E9D500F91F99 /* ViewController.m */,
 				B51CCB8B1F09E9D400F91F99 /* main.m */,
+				B51CCBBD1F09EF8F00F91F99 /* RacDemo_pch.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +183,62 @@
 			path = ReactiveCocoaDemoUITests;
 			sourceTree = "<group>";
 		};
+		B51CCBBF1F09F21600F91F99 /* RacHomeTest */ = {
+			isa = PBXGroup;
+			children = (
+				B51CCBC01F09F21600F91F99 /* controller */,
+				B51CCBC11F09F21600F91F99 /* model */,
+				B51CCBC21F09F21600F91F99 /* view */,
+			);
+			path = RacHomeTest;
+			sourceTree = "<group>";
+		};
+		B51CCBC01F09F21600F91F99 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				B51CCBD11F09F54700F91F99 /* RacHomeTestViewController.h */,
+				B51CCBD21F09F54700F91F99 /* RacHomeTestViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		B51CCBC11F09F21600F91F99 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				B51CCBCE1F09F41C00F91F99 /* RacTestModel.h */,
+				B51CCBCF1F09F41C00F91F99 /* RacTestModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		B51CCBC21F09F21600F91F99 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B51CCBC31F09F28B00F91F99 /* NetWorkClient */ = {
+			isa = PBXGroup;
+			children = (
+				B51CCBC71F09F2FA00F91F99 /* MutableDeepCopy */,
+				B51CCBC41F09F2AF00F91F99 /* NetworkClient.h */,
+				B51CCBC51F09F2AF00F91F99 /* NetworkClient.m */,
+			);
+			path = NetWorkClient;
+			sourceTree = "<group>";
+		};
+		B51CCBC71F09F2FA00F91F99 /* MutableDeepCopy */ = {
+			isa = PBXGroup;
+			children = (
+				B51CCBC81F09F2FA00F91F99 /* NSArray+mutableDeepCopy.h */,
+				B51CCBC91F09F2FA00F91F99 /* NSArray+mutableDeepCopy.m */,
+				B51CCBCA1F09F2FA00F91F99 /* NSDictionary+mutableDeepCopy.h */,
+				B51CCBCB1F09F2FA00F91F99 /* NSDictionary+mutableDeepCopy.m */,
+			);
+			path = MutableDeepCopy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B51CCBB41F09E9D500F91F99 /* Build configuration list for PBXNativeTarget "ReactiveCocoaDemo" */;
 			buildPhases = (
+				DE87ECBBB56EFFA479C0F068 /* [CP] Check Pods Manifest.lock */,
 				B51CCB831F09E9D400F91F99 /* Sources */,
 				B51CCB841F09E9D400F91F99 /* Frameworks */,
 				B51CCB851F09E9D400F91F99 /* Resources */,
+				6C339DC8A25518F5D0637361 /* [CP] Embed Pods Frameworks */,
+				E7ACD48F63A6A95732414043 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,14 +370,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6C339DC8A25518F5D0637361 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveCocoaDemo/Pods-ReactiveCocoaDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE87ECBBB56EFFA479C0F068 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E7ACD48F63A6A95732414043 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactiveCocoaDemo/Pods-ReactiveCocoaDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B51CCB831F09E9D400F91F99 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B51CCBCD1F09F2FA00F91F99 /* NSDictionary+mutableDeepCopy.m in Sources */,
+				B51CCBD01F09F41C00F91F99 /* RacTestModel.m in Sources */,
 				B51CCB921F09E9D500F91F99 /* ViewController.m in Sources */,
 				B51CCB8F1F09E9D500F91F99 /* AppDelegate.m in Sources */,
+				B51CCBD31F09F54700F91F99 /* RacHomeTestViewController.m in Sources */,
 				B51CCB8C1F09E9D400F91F99 /* main.m in Sources */,
+				B51CCBCC1F09F2FA00F91F99 /* NSArray+mutableDeepCopy.m in Sources */,
+				B51CCBC61F09F2AF00F91F99 /* NetworkClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,8 +579,12 @@
 		};
 		B51CCBB51F09E9D500F91F99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 219AB9B0024FDF84B4CEF5A0 /* Pods-ReactiveCocoaDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ReactiveCocoaDemo/RacDemo_pch.pch;
 				INFOPLIST_FILE = ReactiveCocoaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Turbo.ReactiveCocoaDemo;
@@ -435,8 +594,12 @@
 		};
 		B51CCBB61F09E9D500F91F99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 680AF6FDFD74234307E7F29C /* Pods-ReactiveCocoaDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ReactiveCocoaDemo/RacDemo_pch.pch;
 				INFOPLIST_FILE = ReactiveCocoaDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Turbo.ReactiveCocoaDemo;
@@ -509,6 +672,7 @@
 				B51CCBB61F09E9D500F91F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B51CCBB71F09E9D500F91F99 /* Build configuration list for PBXNativeTarget "ReactiveCocoaDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +681,7 @@
 				B51CCBB91F09E9D500F91F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B51CCBBA1F09E9D500F91F99 /* Build configuration list for PBXNativeTarget "ReactiveCocoaDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +690,7 @@
 				B51CCBBC1F09E9D500F91F99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
