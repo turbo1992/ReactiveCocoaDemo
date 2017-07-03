@@ -35,7 +35,7 @@ static char resultLabelAssociation;
     
     // 请求结果展示
     UILabel *resultLabel = [[UILabel alloc]init];
-    resultLabel.frame = CGRectMake(10.0f, 200.0f, self.view.frame.size.width-20.0f, 200.0f);
+    resultLabel.frame = CGRectMake(50.0f, 150.0f, self.view.frame.size.width-100.0f, 300.0f);
     resultLabel.numberOfLines = 0;
     [self addAssion:resultLabel];
     [self.view addSubview:resultLabel];
@@ -46,25 +46,23 @@ static char resultLabelAssociation;
 - (void)sendRequest {
     
     UIButton *sendButton = [[UIButton alloc]init];
-    sendButton.frame = CGRectMake(50.0f, 150.0f, self.view.frame.size.width - 100.0f, 30.0f);
+    sendButton.frame = CGRectMake(50.0f, 100.0f, self.view.frame.size.width - 100.0f, 30.0f);
     sendButton.backgroundColor = [UIColor blackColor];
-    [sendButton setTitle:@"发送请求" forState:UIControlStateNormal];
+    [sendButton setTitle:@"sendRequest" forState:UIControlStateNormal];
     [self.view addSubview:sendButton];
     
     @weakify(self);
     sendButton.rac_command = [[RACCommand alloc] initWithSignalBlock:^RACSignal *(id input) {
         @strongify(self);
         
-        UILabel *label = [self getAssociation];
-        label.text = @"输出状态->%ld\n输出结果->%@\n";
+        RacTestModel *homePageModel = [[RacTestModel alloc]init];
         
-        RacTestModel *tipModel = [[RacTestModel alloc]init];
-        NSString *pathUrl = [NSString stringWithFormat:@"http://192.168.1.53:8080/MJServer/login?username=123&pwd=123"];
-        [[[tipModel queryLastQuestionTip:pathUrl] deliverOn:[RACScheduler mainThreadScheduler]]
-         subscribeNext:^(QuestionTipModel *object) {
+        NSString *pathUrl = [NSString stringWithFormat:@"http://mt.benxiangbentu.net/api/h5/homePage/indexList?pageNo=1&pageSize=10"];
+        [[[homePageModel queryHomePageData:pathUrl] deliverOn:[RACScheduler mainThreadScheduler]]
+         subscribeNext:^(HomePageTipModel *result) {
              
              UILabel *label = [self getAssociation];
-             label.text = [NSString stringWithFormat:@"输出状态->%ld\n输出结果->%@\n",object.resultCode,object.questionTipListArr];
+             label.text = [NSString stringWithFormat:@"message:--->%@\nsuccess:--->%ld\nserverTime:--->%@\nheadlineList:--->%@\n",result.message,result.success,result.serverTime,result.headlineList];
          }];
         
         return [RACSignal empty];

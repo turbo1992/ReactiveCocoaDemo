@@ -8,17 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
-@interface QuestionTipModel : NSObject
+@interface HomePageTipModel : NSObject
 
-@property (nonatomic, assign) NSInteger                        resultCode;          /* resultCode */
-@property (nonatomic, copy  ) NSString                         *resultDesc;         /* 提示信息 */
-@property (nonatomic, strong) NSArray                          *questionTipListArr; /* 问题数组 */
-
-@property (nonatomic, strong) NSString                         *qCategoryName;      /* 类型 */
-@property (nonatomic, strong) NSString                         *qNickName;          /* 昵称 */
-@property (nonatomic, assign) NSInteger                        pushMsgId;           /* 推送消息id */
-@property (nonatomic, assign) NSInteger                        qId;                 /* 问题id */
-
+@property (nonatomic, assign) NSInteger                         errCode;
+@property (nonatomic, strong) NSDictionary                      *data;
+@property (nonatomic, copy  ) NSString                          *message;
+@property (nonatomic, copy  ) NSString                          *hasData;
+@property (nonatomic, copy  ) NSString                          *serverTime;
+@property (nonatomic, assign) NSInteger                         success;
+@property (nonatomic, strong) NSArray                           *bannerList;
+@property (nonatomic, strong) NSArray                           *headlineList;
 
 - (id)initWithAttributes:(NSDictionary *)attributes;
 
@@ -26,10 +25,10 @@
 
 @interface RacTestModel : NSObject
 
-/* 请求消息 */
-- (RACSignal *)queryLastQuestionTip:pathUrl;
+/* 请求首页 */
+- (RACSignal *)queryHomePageData:pathUrl;
 
-/* 登录 */
-- (RACSignal *)queryLoginRequest:loginUrl;
+/* 请求登录 */
+- (RACSignal *)queryLoginData:loginUrl;
 
 @end

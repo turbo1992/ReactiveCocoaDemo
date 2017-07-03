@@ -24,7 +24,7 @@
         mgr = [[AFHTTPSessionManager alloc] initWithBaseURL:baseURL sessionConfiguration:configuration];
         mgr.requestSerializer = [AFJSONRequestSerializer serializer];
         mgr.responseSerializer = [AFJSONResponseSerializer serializer];
-        mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/html",nil];
+        mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/html",@"text/json",nil];
     });
     return mgr;
 }

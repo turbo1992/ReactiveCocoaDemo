@@ -8,7 +8,7 @@
 
 #import "RacTestModel.h"
 
-@implementation QuestionTipModel
+@implementation HomePageTipModel
 
 - (id)initWithAttributes:(NSDictionary *)attributes
 {
@@ -16,11 +16,16 @@
     if (!self) {
         return nil;
     }
-    
-    self.resultCode                   = [[attributes objectForKey:@"resultCode"] integerValue];
-    self.resultDesc                   = [attributes  objectForKey:@"resultDesc"];
-    self.questionTipListArr           = [attributes  objectForKey:@"questionTipList"];
-    
+
+    self.errCode                    = [[attributes objectForKey:@"errCode"] integerValue];
+    self.data                       = [attributes  objectForKey:@"data"];
+    self.message                    = [attributes  objectForKey:@"message"];
+    self.hasData                    = [attributes  objectForKey:@"hasData"];
+    self.serverTime                 = [attributes  objectForKey:@"serverTime"];
+    self.success                    = [[attributes  objectForKey:@"success"] integerValue];
+    self.bannerList                 = [self.data objectForKey:@"bannerList"];
+    self.headlineList               = [self.data objectForKey:@"headlineList"];
+
     return self;
 }
 
@@ -28,27 +33,31 @@
 
 @implementation RacTestModel
 
-/* 请求消息 - 返回序列化数据模型object */
-- (RACSignal *)queryLastQuestionTip:pathUrl{
+/* 请求首页 - 返回序列化数据模型object */
+- (RACSignal *)queryHomePageData:pathUrl{
     
     return [[NetworkClient requestWithMethod:RequestMethodTypeGet url:pathUrl params:nil]map:^id(NSDictionary *responseObject) {
         
         if ([responseObject isKindOfClass:[NSNull class]]) {
             return nil;
         }
-                
-        QuestionTipModel * object = [[QuestionTipModel alloc] initWithAttributes:responseObject];
+        
+        NSLog(@"responseObject:---->%@",responseObject);
+        
+        HomePageTipModel * object = [[HomePageTipModel alloc] initWithAttributes:responseObject];
         return object;
     }];
     
     
 }
 
-/* 登录 - 返回完整原始数据result */
-- (RACSignal *)queryLoginRequest:loginUrl {
+/* 请求登录 - 返回完整原始数据result */
+- (RACSignal *)queryLoginData:loginUrl {
     
-    return [[NetworkClient requestWithMethod:RequestMethodTypePost url:loginUrl params:nil] map:^id(id responseObject) {
+    return [[NetworkClient requestWithMethod:RequestMethodTypeGet url:loginUrl params:nil] map:^id(id responseObject) {
         
+        NSLog(@"responseObject:---->%@",responseObject);
+
         if ([responseObject isKindOfClass:[NSNull class]]) {
             return nil;
         }
