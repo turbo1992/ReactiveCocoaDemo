@@ -21,6 +21,7 @@ static char resultLabelAssociation;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //test
     
     [self initUI];
     
