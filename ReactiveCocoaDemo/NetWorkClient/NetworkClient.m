@@ -68,7 +68,6 @@
                  [subject sendCompleted];
              }
              failure:^(NSURLSessionDataTask *task, NSError *error) {
-                 NSLog(@"Error: %@", error);
                  if (error.code == kCFURLErrorTimedOut && [self checkRetry:retryCount]) {
                      [self requestWithMethod:methodType url:url params:nil];
                  } else {
